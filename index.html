@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>
+            Criando uma Wireframe com CSS
+        </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/jquery.js"></script>
+        <script src="js/ancora.js"></script>
+    </head>
+    <body>
+        
+        <!-- 
+            Tags para estrutura do site HTML5
+            
+                <header> - representa a seção do cabeçalho do site
+                <footer> - representa a seção do rodapé do site
+                <nav> - representa a seção do menu de navegação do site, porém deve ser utilizada apenas no         menu relevante do site
+                <section> - representa as seções de conteudo do site (assuntos)
+                <article> - representa um conteudo de terceiros, que podemos colocar no site (Citação de um autor, blog, forum, area de reportagens que vão vir de outros site)
+                <aside> - representa uma area de propagandas de outro site (Divulgar produtos de terceiros, anuncios)
+                <figure> - indica que ali terá uma imagem (<img>), que é relevante para o assunto do seu site
+                    <figcaption> - permite colocar uma legenda na imagem (não é obrigatória) 
+                
+                <video> - permite colocar um video
+                <canvas> - permite criar um desenho (grafico)
+                <audio>
+
+
+        -->
+        
+        <!-- Seção do Menu        -->
+        <header id="containerMenu">
+            <div class="conteudo">
+                <div id="logo">
+                    <figure>
+                        <!-- Entrar com tag <img> -->
+                      
+                    </figure>
+                </div>
+                <nav id="menu">
+                    <ul id="listMenu">
+                        <li class="menuItem">Home</li>
+                        <li class="menuItem">
+                            <!-- Ancora é o recurso de fazer links para seções de conteudo, e não para outras páginas -->
+                            <a href="#containerEmpresa">
+                                Empresa
+                            </a>
+                        </li>
+                        <li class="menuItem">
+                            <a href="#containerServicos">
+                                Serviços
+                            </a>    
+                        </li>
+                        <li class="menuItem">
+                            <a href="#containerProdutos">
+                                Produtos
+                            </a>    
+                        </li>
+                        <li class="menuItem">
+                            <a href="#containerContatos">
+                                Contatos
+                            </a>    
+                        </li>
+                    </ul>
+                </nav>
+                <div id="redesSociais">
+                    <div class="iconeRedeSocial"></div>
+                    <div class="iconeRedeSocial"></div>
+                    <div class="iconeRedeSocial"></div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Seção do Slogan      -->
+        <div id="containerSlogan">
+            <div id="slogan">
+                <p>
+                    Admodum quo dolor incididunt iis quo velit despicationes iis anim qui cernantur 
+                    se duis, duis ingeniis nam domesticarum. Summis pariatur ubi ipsum noster. 
+           
+                </p>
+            </div>
+        </div>
+        
+        <!-- Seção da Empresa  -->
+        <div id="containerEmpresa">
+            <section class="conteudo">
+                <h1>Sobre a Empresa</h1>
+                <div id="sobreEmpresa">
+                    <div id="imagemSobre"></div>
+                    <div id="textoSobre">
+                        <p>
+                            Esse iudicem relinqueret, dolor an in aliqua aliquip. Iudicem cillum duis 
+                            nescius veniam, sed iis tractavissent. Excepteur ab sint, aliqua ubi cernantur. 
+                            Qui do irure aliquip. A qui relinqueret, quis cernantur a aliqua irure. Esse iudicem relinqueret, dolor an in aliqua aliquip. Iudicem cillum duis.  A qui relinqueret, quis cernantur a aliqua irure. Esse iudicem relinqueret, dolor an in aliqua aliquip. Iudicem cillum duis.
+                        </p>
+                        <p>
+                            Esse iudicem relinqueret, dolor an in aliqua aliquip. Iudicem cillum duis 
+                            nescius veniam, sed iis tractavissent. Excepteur ab sint, aliqua ubi cernantur. 
+                            Qui do irure aliquip.
+                        </p>
+                    </div>
+                    <div id="galeriaSobreLeft">
+                        <div class="imagemGaleriaSobre"></div>
+                        <div class="imagemGaleriaSobre"></div>
+                    </div>
+                    <div id="galeriaSobreRight">
+                        <div class="imagemGaleriaSobre"></div>
+                        <div class="imagemGaleriaSobre"></div>
+                    </div>
+                </div>
+                <div id="historicoEmpresa">
+                    <h2>Histórico da Empresa</h2>
+                    <div id="historico">
+                        <div id="iconeTextoHistorico">
+                            <div id="iconeHistorico"></div>
+                            <div id="textoHistoricoPrinc">
+                                <p>
+                                    Quid arbitrantur appellat eram incididunt. Nescius transferrem est probant. Ubi 
+                                    tamen anim ad quamquam iis sunt.
+                                </p>
+                            
+                            </div>
+                        </div>
+                        <div id="textoComplHistorico">
+                            <p>
+                                    Quid arbitrantur appellat eram incididunt. Nescius transferrem est probant. Ubi 
+                                    tamen anim ad quamquam iis sunt offendit hic tempor. 
+                                </p>
+                        </div>
+                    </div>
+                    <div id="imagemHistorico"></div>
+                    <div id="textoHistorico">
+                         <p>
+                            Quid arbitrantur appellat eram incididunt. Nescius transferrem est probant. Ubi 
+                            tamen anim ad quamquam iis sunt offendit hic tempor. 
+                             
+                            Quid arbitrantur appellat eram incididunt. Nescius transferrem est probant. Ubi 
+                            tamen anim ad quamquam iis sunt offendit hic tempor. 
+                        </p>
+                    
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <!-- Seção de Serviços  -->
+        <div id="containerServicos">
+            <section class="conteudo">
+                <h1>Serviços</h1>
+                <div id="servicosLeft">
+                    <div id="textoServicoLeft">
+                        <p>
+                            Deserunt a mandaremus, duis tempor se expetendis se deserunt aut mandaremus, non 
+                            quid fidelissimae. Aliquip lorem pariatur aliquip et enim incididunt 
+                            coniunctione. Aute ita iis culpa arbitror. Hic sint mandaremus imitarentur. Quo 
+                            quorum arbitror possumus ab non quo aute eiusmod qui varias relinqueret admodum 
+                            minim quamquam, do sunt admodum fidelissimae. Aliqua an aut ipsum senserit, 
+                            nostrud illustriora te occaecat e o summis adipisicing nam ullamco sunt labore 
+                            si quid hic irure consequat in appellat, aut in quae quis duis eu iis summis 
+                            proident do culpa o ullamco. Dolor ut mentitum.
+                        </p>
+                    </div>
+                    <div id="galeriaServicoLeft">
+                        <div class="imagemGaleriaServicos"></div>
+                        <div class="imagemGaleriaServicos"></div>
+                        <div class="imagemGaleriaServicos"></div>
+                        <div class="imagemGaleriaServicos"></div>
+                    </div>
+                </div>
+                <div id="servicosRight">
+                    <h2>Serviços em Destaque</h2>
+                    <div id="servicosDestaque">
+                        <div id="imagemServicoDestaque"></div>
+                        <div id="textoServicoDestaque">
+                             <p>
+                                Possumus aute quibusdam, se nisi illum est senserit et dolor ut senserit hic 
+                                fugiat aut de summis aliquip. Commodo ea dolor mandaremus. Ita de lorem minim 
+                                amet, iis quorum quorum lorem cernantur se appellat summis et quibusdam.
+
+                            </p>
+
+                        </div>
+                    </div>
+                    <div id="servicosDestaqueTexto">
+                        <p>
+                            Possumus aute quibusdam, se nisi illum est senserit et dolor ut senserit hic 
+                            fugiat aut de summis aliquip. Commodo ea dolor mandaremus. Ita de lorem minim 
+                            amet, iis quorum quorum lorem cernantur se appellat summis et quibusdam.
+
+                        </p>
+                    
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <!-- Seção de Produtos  -->
+        <div id="containerProdutos">
+            <section class="conteudo">
+                <h1>Produtos</h1>
+                <div class="cardProduto">
+                    <h2>Produto 1</h2>
+                    <div class="imagemCard"></div>
+                    <div class="textoCard">
+                        <p>
+                            Summis offendit a officia est iis iis aliqua doctrina. Quae doctrina non 
+                            praesentibus hic est incurreret exquisitaque.
+                            Summis offendit a officia est iis iis aliqua doctrina.
+                        </p>
+                    </div>
+                </div>
+                <div class="cardProduto">
+                    <h2>Produto 1</h2>
+                    <div class="imagemCard"></div>
+                    <div class="textoCard">
+                         <p>
+                            Summis offendit a officia est iis iis aliqua doctrina. Quae doctrina non 
+                            praesentibus hic est incurreret exquisitaque.
+                            Summis offendit a officia est iis iis aliqua doctrina.
+                        </p>
+                    </div>
+                </div>
+                <div class="cardProduto">
+                    <h2>Produto 1</h2>
+                    <div class="imagemCard"></div>
+                    <div class="textoCard">
+                         <p>
+                            Summis offendit a officia est iis iis aliqua doctrina. Quae doctrina non 
+                            praesentibus hic est incurreret exquisitaque.
+                            Summis offendit a officia est iis iis aliqua doctrina.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        
+        </div>
+        
+        <!-- Seção de Contatos  -->
+        <div id="containerContatos">
+            <section class="conteudo">
+                <h1>Contatos</h1>
+                <div id="mapaContato"></div>
+                <div id="dadosContato">
+                    <p>
+                        Summis offendit a officia est iis iis aliqua doctrina. Quae doctrina non 
+                        praesentibus hic est incurreret exquisitaque.
+                        Summis offendit a officia est iis iis aliqua doctrina. Summis offendit a officia est iis iis aliqua doctrina.
+                    </p>
+                    <p>
+                        Summis offendit a officia est iis iis aliqua doctrina. Quae doctrina non 
+                        praesentibus hic est incurreret exquisitaque.
+                        Summis offendit a officia est iis iis aliqua doctrina. Summis offendit a officia est iis iis aliqua doctrina.
+                    </p>
+                </div>
+                <div id="imagemFilialContato">
+                    <div class="fotoFilial"></div>
+                    <div class="fotoFilial"></div>
+                </div>
+                <div id="enderecoFilialContato">
+                    <p>
+                        Summis offendit a officia est iis iis aliqua doctrina. Quae doctrina non 
+                        praesentibus hic est incurreret exquisitaque.
+                        Summis offendit.
+                    </p>
+                    <p>
+                        Summis offendit a officia est iis iis aliqua doctrina. Quae doctrina non 
+                        praesentibus hic est incurreret exquisitaque.
+                        Summis offendit.
+                    </p>
+                
+                </div>
+            </section>
+        </div>
+        
+        <!-- Seção do Rodapé -->
+        <footer id="containerRodape">
+            <div class="conteudo">
+                <div id="direitosReservados">
+                    <p>
+                        © Copyright 2021 <br>
+                        Todos os direitos reservados - Política de Privacidade
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
